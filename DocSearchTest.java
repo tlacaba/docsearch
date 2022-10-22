@@ -7,10 +7,10 @@ import org.junit.*;
 public class DocSearchTest {
     @Test
     public void testHandleURL() {
-        // no idea why handler even is taking an argument now, it wasn't like this in the lecture.
-        Handler testHandler = new Handler("");
-        URI basePath = new URI("http://localhost/");
-        assertEquals("Don't know how to handle that path!", testHandler.handleRequest(basePath));
+        // no idea why handler even is taking an argument now, it wasn't like this in the lecture, nor was it like this in wavelet
+        Handler testHandler = new Handler(""); //don't know what to put here
+        URI rootPath = new URI("http://localhost/"); //put this in only cause it looked like what was done in the lecture
+        assertEquals("Don't know how to handle that path!", testHandler.handleRequest(rootPath));
     }
 }
 /*
