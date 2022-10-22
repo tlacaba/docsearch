@@ -52,5 +52,3 @@ class DocSearchServer {
         Server.start(port, new Handler("./technical/"));
     }
 }
-
-// test
